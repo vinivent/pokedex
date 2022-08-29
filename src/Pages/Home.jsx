@@ -5,7 +5,8 @@ import NavBar from '../Components/NavBar';
 import PokemonCard from '../Components/PokemonCard';
 import React, { useEffect, useState } from 'react';
 import { Skeletons } from '../Components/Skeletons';
-import { NoMeals } from '@mui/icons-material';
+
+import "./styles.css";
 
 export const Home = () => {
     const [pokemons, setPokemon] = useState([]);
@@ -36,7 +37,7 @@ export const Home = () => {
     }
 
     return (
-        <div>
+        <div className="container">
             <NavBar pokemonFilter={pokemonFilter} />
             <Container maxWidth="false">
                 <Grid container spacing={3}>
